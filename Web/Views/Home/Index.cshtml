@@ -1,0 +1,46 @@
+﻿@model List<Web.Models.Photographs>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var total = 7; 
+    var myMessage = "Hello World";
+}
+
+
+@total
+
+@Html.Partial("_PartialHeader", "myname")
+<p style="background-color: red; text-align: center;">CCC</p>
+    <table align="center">
+        <tr>
+            @foreach (var img in Model)
+            {
+                <td>
+                    <img src=@img.Url />
+                </td>
+            }
+        </tr>
+        <tr>
+            @foreach (var img in Model)
+            {
+                <td>
+                    <p id="id1">@img.Name</p>
+                    <p class="class1">meraba</p>
+                </td>
+            }
+        </tr>
+</table>
+<!--<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+   
+    </div>
+</body>
+</html>
+    -->

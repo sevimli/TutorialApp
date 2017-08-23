@@ -1,0 +1,9 @@
+﻿body {
+    background-color: aqua;
+}
+
+td > p {
+    background-color: blue;
+    text-align:center;
+    color: red;
+}
